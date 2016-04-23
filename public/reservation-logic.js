@@ -1,14 +1,19 @@
-var customer = function(name, time, email){
+// Creating a constructor to hold all of the reservation information.
+var customer = function(name, size, email){
 	this.name = name,
-	this.time = time,
+	this.size = size,
 	this.email = email
+	this.time = moment().format('h:mm');
 }
 
+// When the user clicks the submit button..
 $("#save").click(function(){
-	var person = new customer( $('#name').val(), $('#time').val(), $('#email').val() )
-	// alert(person.name)
 
-	$.post('http://localhost:3000/reservations', person, function(data, status){
+	// A new reservation object is created from the user's input. 
+	var reservationInfo = new customer( $('#name').val(), $('#size').val(), $('#email').val() )
+
+	// A post AJAX call is made containing the new reservation object. 
+	$.post('http://localhost:3000/reservations', reservationInfo, function(data, status){
 		alert('post success!')
 	});
 

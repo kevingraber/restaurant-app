@@ -1,18 +1,9 @@
-
-// $( document ).ready(function() {
-
-// 	$.ajax({url: 'http://localhost:3000/api/admin',  method:'GET'}).done(function(data){
-// 		console.log(data)
-// 		alert('hi')
-// 	});
-
-// });
-
 $.ajax({url: 'http://localhost:3000/api/admin',  method:'GET'}).done(function(data){
+	
 	console.log(data)
-	// alert(data[0].name)
 
 	for (var i = 0; i < data.length; i++) {
+
 		var tr = $('<tr>')
 
 		var name = $('<td>')
@@ -32,6 +23,5 @@ $.ajax({url: 'http://localhost:3000/api/admin',  method:'GET'}).done(function(da
 
 		$('#admintable').append(tr)
 	}
-
 
 });
