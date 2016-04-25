@@ -1,7 +1,7 @@
+// AJAX call to the admin API.
 $.ajax({url: 'http://localhost:3000/api/admin',  method:'GET'}).done(function(data){
-	
-	console.log(data)
 
+	// Generate a table from the Admin information. 
 	for (var i = 0; i < data.length; i++) {
 
 		var tr = $('<tr>')
@@ -22,6 +22,6 @@ $.ajax({url: 'http://localhost:3000/api/admin',  method:'GET'}).done(function(da
 		tr.append(userName)
 
 		$('#admintable').append(tr)
-	}
+	};
 
 });

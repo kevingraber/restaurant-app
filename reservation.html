@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resrvations</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <!-- Moment.js Reference -->
-  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+
+    <title>Resrvations</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+
 </head>
 <body>
 
-<div class="container-fluid"> <!-- Container -->
+<div class="container">
 
-  
-<div class="jumbotron"> <!-- Jumbotron -->
-  <div class="container">
-    <h1 align="center">Reservations</h1>
-    <!-- <p align="center">Contents</p> -->
-  </div>
-</div> <!-- Jumbotron end -->
-<div class="col-lg-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">Table Reservation</div>
-      <div class="panel-body">
-        <form>
-          <div class="form-group">
-            <label>Name</label>
-            <input type="name" class="form-control" name="Name" id="name">
-          </div>
-          
-<!--           <div class="form-group">
-            <label>Desired time</label>
-            <input type="time" class="form-control" name="Desired time" id="time">
-          </div> -->
-          
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" name="email" id="email">
-          </div>
-
-          <div class="form-group">
-            <label>Size of Party</label>
-            <input type="number" class="form-control" name="email" id="size">
-          </div>
-
-          <div class="form-group">
-            <button type='button' id="save">Save</button>
-          </div>
-
-        </form>
-      </div>
-      </div>
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 align="center">Reservations</h1>
     </div>
+</div>
+
+<div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Table Reservation</div>
+        <div class="panel-body">
+            <form>
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="name" class="form-control" name="Name" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Size of Party</label>
+                    <input type="number" class="form-control" name="email" id="size">
+                </div>
+
+                <div class="form-group">
+                    <button type='button' id="save">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
 
 <script type="text/javascript" src="public/reservation-logic.js"></script>
 </body>

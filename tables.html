@@ -11,14 +11,17 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container">
 
 <!-- Jumbotron -->
 <div class="jumbotron">
-    <h1 align="center">Hot Restaurants: Table Scheduler</h1>
+    <h1 align="center">Table Scheduler</h1>
 </div>
 
 <div class="well">
@@ -27,10 +30,10 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Size of Party</th>
                 <th>Email</th>
-                <th>Number of People</th>
                 <th>Time</th>
-                <th>Finished</th>
+                <th>Remove</th>
             </tr>
         </thead>
         <tbody id="reservationtable">
@@ -45,12 +48,13 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Size of Party</th>
                 <th>Email</th>
-                <th>Number of People</th>
                 <th>Time</th>
+                <th>Remove</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="waitingtable">
             <!-- Data will be generated here. -->
         </tbody>
     </table>
